@@ -1,0 +1,13 @@
+[
+  {
+    $match:
+      /**
+       * query: The query in MQL.
+       */
+      {
+        order_line: {
+          $in: [5, 8, 17]
+        }
+      }
+  }
+]

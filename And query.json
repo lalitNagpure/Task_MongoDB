@@ -1,0 +1,20 @@
+[
+  {
+    $match:
+      /**
+       * query: The query in MQL.
+       */
+      {
+        $and: [
+          {
+            sales: {
+              $gt: 1750
+            }
+          },
+          {
+            ship_mode: "Standard Class"
+          }
+        ]
+      }
+  }
+]
